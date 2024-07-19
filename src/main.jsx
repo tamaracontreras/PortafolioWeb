@@ -4,12 +4,14 @@ import App from './App.jsx'
 import './index.css'
 import Navbar from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
-import AboutMeCard from './components/AboutMeCard.jsx'
+import Card from './components/Card.jsx'
+import List from './components/List.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Navbar />
-    <AboutMeCard />
+    <Card />
+    <List />
     <App />
     <Footer />
 

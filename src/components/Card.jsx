@@ -1,6 +1,6 @@
 
 
-const AboutMeCard = () => {
+const Card = () => {
   return (
     <div className="card md:flex bg-slate-100 rounded-xl p-8 md:p-0 hover:shadow-xl transition-shadow duration-300" >
       <div className="card-body p-4">
@@ -18,4 +18,4 @@ const AboutMeCard = () => {
   );
 };
 
-export default AboutMeCard;
+export default Card;
