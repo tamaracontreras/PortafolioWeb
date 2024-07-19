@@ -1,0 +1,22 @@
+footer {
+    display: flex; 
+    justify-content: center; /*horizontalmente */
+    align-items: center; /* verticalmente */
+    width: 100%;
+    margin-top: 30px; /* Empuja el footer hacia la parte inferior */
+  }
+  /* div interno de footer */
+  .contacto {
+    display: flex; 
+    justify-content: center; /*horizontalmente  */
+    font-size: 30px;
+    gap: 20px;
+    padding: 5px;
+    height: max-content;
+    width: max-content;
+    margin-bottom: 20px;
+  }
+  /* color iconos rr.ss */
+  a {
+    color: black;
+  }
