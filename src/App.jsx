@@ -1,31 +1,30 @@
-import { useState } from 'react'
+// App.jsx
 
-import './App.css'
+import { BrowserRouter as Router } from "react-router-dom";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Services from "./components/Services";
+import Portafolio from "./components/Portafolio";
+import AboutMe from "./components/Aboutme";
+import Contacto from "./components/Contact";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-     <div className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 bg-blue-500 sm:bg-red-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-purple-500">
-      <h1 className="text-lg font-medium text-blue-800">
-        ¡Hola, Tamara! Bienvenida a tu proyecto con Vite, React y Tailwind CSS
-      </h1>
-    </div>
-      
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <main className="flex-grow">
+          <Home />
+          <AboutMe />
+          <Portafolio />
+          <Services />
+          <Contacto />
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
