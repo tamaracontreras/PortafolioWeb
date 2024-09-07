@@ -1,47 +1,30 @@
-import datadbz from '../img/datadbz.jpg';
-import interactive from '../img/interactive.jpg';
-import moviegeek from '../img/moviegeek.jpg';
-// import memoria from '../img/memoria.jpg';
-  //falta arreglar las imagenes de cada proyecto, la info y que tenga la alineacion que entrega tailwind
-  const Portafolio = () => {
-    return (
-      <section id="portafolio" className="justify-center h-screen bg-slate-100 mt-120 pt-16" >
-      <h1 className='text-center p-2 mt-10'>Portafolio</h1>
-      <div className="flex flex-wrap mt-3">
-        <div className="p-4 w-full md:w-1/2 lg:w-1/3">
-          <div className="card bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src={datadbz} className="w-full h-32 object-cover" alt="datadbz" />
-            <div className="card-body p-4">
-              <h5 className="card-title text-xl font-bold mb-2">App Data Lovers_DragoBall</h5>
-              <p className="card-text text-gray-700">Plataforma en línea con una interfaz de tarjetas que permite explorar, filtrar y ordenar datos según las preferencias del usuario.
+const Portafolio = () => {
+  return (
+    <section
+      id="portafolio"
+      className="h-screen bg-slate-100 flex flex-col items-center justify-center py-16"
+    >
+      {/* Título centrado */}
+      <h1 className="text-4xl font-bold text-center mb-2">Portafolio</h1>
 
-</p>
-            </div>
+      {/* Contenedor principal alineado al centro */}
+      <div className="flex flex-wrap justify-center w-full max-w-6xl px-4 mt-5">
+        {/* Contenedor del Texto */}
+        <div className="w-full md:w-1/2 p-8 bg-white/30 backdrop-blur-lg rounded-lg shadow-lg">
+          <div>
+            <p className="text-lg text-justify">
+              Soy desarrolladora web con formación en Laboratoria, especializada
+              en la creación de soluciones digitales funcionales y visualmente
+              atractivas, utilizando tecnologías como HTML, CSS, JavaScript y
+              React. Mi enfoque en el aprendizaje continuo y mi capacidad para
+              adaptarme rápidamente a nuevos retos me permiten mantenerme a la
+              vanguardia de la innovación tecnológica.
+            </p>
           </div>
         </div>
-        <div className="p-4 w-full md:w-1/2 lg:w-1/3">
-          <div className="card bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src={interactive} className="w-full h-32 object-cover" alt="interactive" />
-            <div className="card-body p-4">
-              <h5 className="card-title text-xl font-bold mb-2">Interactive Comments</h5>
-              <p className="card-text text-gray-700">Sección de comentarios interactiva en un entorno web, mejorando la funcionalidad para coincidir con el diseño proporcionado. <br></br>Desafío de Front-mentor.
+      </div>
+    </section>
+  );
+};
 
-</p>
-            </div>
-          </div>
-        </div>
-        <div className="p-4 w-full md:w-1/2 lg:w-1/3">
-          <div className="card bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src={moviegeek} className="w-full h-32 object-cover" alt="moviegeek" />
-            <div className="card-body p-4">
-              <h5 className="card-title text-xl font-bold mb-2">App Movie Geek</h5>
-              <p className="card-text text-gray-700">Plataforma de películas que brinda a los usuarios la posibilidad de descubrir contenido según sus gustos personales, ofreciendo año y título.</p>
-            </div>
-          </div>
-        </div>
-        </div>
-        </section>
-    );
-  };
-  
-  export default Portafolio;
+export default Portafolio;

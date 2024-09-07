@@ -2,78 +2,78 @@
     position: absolute;
     top: 20%;
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 200px;
-    margin-left: -50px;
+    width: 120px; /* 100px * 1.2 */
+    height: 120px; /* 100px * 1.2 */
+    margin-top: 20px;
+    margin-left: -60px; /* -50px * 1.2 */
     border-radius: 2px;
-    
     overflow: hidden;
     background: transparent;
     font-family: 'Open Sans', Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
   
-  .center {
+.center {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 25px;
-    left: 25px;
+    width: 60px; /* 50px * 1.2 */
+    height: 60px; /* 50px * 1.2 */
+    top: 30px; /* 25px * 1.2 */
+    left: 30px; /* 25px * 1.2 */
     perspective: 500px;
-  }
+}
   
-  .cube {
-    width: 50px;
-    height: 50px;
+.cube {
+    width: 60px; /* 50px * 1.2 */
+    height: 60px; /* 50px * 1.2 */
     position: absolute;
     transform-style: preserve-3d;
-    transform: translateZ(-25px) rotateX(70deg) rotateZ(-45deg);
+    transform: translateZ(-30px) rotateX(70deg) rotateZ(-45deg); /* -25px * 1.2 */
     animation: rotateCube 5s infinite linear;
     cursor: pointer;
-  }
-  @keyframes rotateCube {
+}
+  
+@keyframes rotateCube {
     0% {
-        transform: translateZ(-25px) rotateX(70deg) rotateZ(-45deg);
+        transform: translateZ(-30px) rotateX(70deg) rotateZ(-45deg); /* -25px * 1.2 */
     }
     100% {
-        transform: translateZ(-25px) rotateX(430deg) rotateZ(315deg);
+        transform: translateZ(-30px) rotateX(430deg) rotateZ(315deg); /* -25px * 1.2 */
     }
-  }
+}
 
-  .side {
+.side {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px; /* 50px * 1.2 */
+    height: 60px; /* 50px * 1.2 */
 }
   
 .front {
-    transform: rotateY(0deg) translateZ(25px);
+    transform: rotateY(0deg) translateZ(30px); /* 25px * 1.2 */
     background: #fff;
 }
   
 .back {
-    transform: rotateX(180deg) translateZ(25px);
+    transform: rotateX(180deg) translateZ(30px); /* 25px * 1.2 */
     background: #ccc;
 }
   
 .right {
-    transform: rotateY(90deg) translateZ(25px);
+    transform: rotateY(90deg) translateZ(30px); /* 25px * 1.2 */
     background: #ddd;
 }
   
 .left {
-    transform: rotateY(-90deg) translateZ(25px);
+    transform: rotateY(-90deg) translateZ(30px); /* 25px * 1.2 */
     background: #eee;
 }
   
 .top {
-    transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(30px); /* 25px * 1.2 */
     background: #eee;
 }
   
 .bottom {
-    transform: rotateX(-90deg) translateZ(25px);
+    transform: rotateX(-90deg) translateZ(30px); /* 25px * 1.2 */
     background: #ddd;
 }
