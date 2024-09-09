@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Services from "./components/Services";
+import Servicess from "./components/Servicess";
 import Portafolio from "./components/Portafolio";
 import AboutMe from "./components/Aboutme";
 import Contacto from "./components/Contact";
@@ -18,7 +18,7 @@ const App = () => {
           <Home />
           <AboutMe />
           <Portafolio />
-          <Services />
+          <Servicess />
           <Contacto />
         </main>
         <Footer />
