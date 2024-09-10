@@ -10,10 +10,9 @@ const Services = () => {
       className="h-screen bg-slate-100 flex flex-col items-center justify-center py-16"
     >
       {/* Título de la sección */}
-      <h1 className="text-4xl font-bold text-center mb-2">Servicios</h1>
 
       {/* Contenedor de las tarjetas */}
-      <div className="flex flex-wrap justify-center w-full max-w-6xl px-4">
+      <div className="flex flex-wrap justify-center w-full max-w-6xl px-4 ">
         {/* Utilizando el componente Card para cada servicio */}
         <Card
           title="Transformación Digital"

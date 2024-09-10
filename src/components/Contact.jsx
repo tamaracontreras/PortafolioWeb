@@ -30,10 +30,10 @@ const Contact = () => {
       className="h-screen bg-slate-100 flex flex-col items-center py-16"
     >
       {/* Título de la sección */}
-      <h1 className="text-4xl font-bold text-center mb-8">Contacto</h1>
+      <h1 className="text-4xl font-bold text-center mt-8">Contacto</h1>
 
       {/* Contenedor del formulario */}
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full mx-4 sm:mx-6 md:mx-8">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full mx-4 sm:mx-6 md:mx-8 mt-8">
         <form ref={form} onSubmit={sendEmail}>
           <div className="mb-4">
             <label

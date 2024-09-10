@@ -1,6 +1,6 @@
 import Card from "./card"; // Importa el componente Card
 // import memoria from "../img/memoria.jpg"; // Importa las imágenes de tus proyectos
-import otroProyecto from "../img/interactive.jpg";
+import otroProyecto from "../img/uno.jpg";
 import dataverse from "../img/dataverse.jpg";
 
 const Portfolio = () => {
@@ -13,7 +13,7 @@ const Portfolio = () => {
       <h1 className="text-4xl font-bold text-center mb-2">Portafolio</h1>
 
       {/* Contenedor de las tarjetas */}
-      <div className="flex flex-wrap justify-center w-full max-w-6xl px-4">
+      <div className="flex flex-wrap justify-center w-full max-w-6xl px-4 mt-5">
         {/* Utilizando el componente Card para cada proyecto */}
         <Card
           title="Proyecto Dataverse"
@@ -22,8 +22,9 @@ const Portfolio = () => {
           image={dataverse}
         />
         <Card
-          title="Otro Proyecto"
-          description="Descripción de otro proyecto, sus características y los resultados obtenidos."
+          title="Proyecto Movie Geek!"
+          description="Plataforma de películas que brinda a los usuarios la posibilidad de descubrir títulos de películas , según los parámetros de búsqueda que ingrese.
+          El proyecto utiliza la API de OMDB con Fetch para obtener datos sobre películas. Se implementa diseño responsivo y se despliega en GitHub Pages para acceso público."
           image={otroProyecto}
         />
         {/* Agrega más tarjetas según sea necesario */}
