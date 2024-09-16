@@ -16,9 +16,6 @@ const Home = () => {
             <br />
           </p>
         </div>
-        <a href="#" className="text-blue-600 hover:text-blue-800 underline">
-          See my work
-        </a>
       </div>
       <CubeComponent />
     </section>

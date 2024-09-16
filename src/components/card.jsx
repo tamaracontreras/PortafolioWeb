@@ -21,12 +21,12 @@ const Card = ({
           {showButtons && (
             <div className="flex justify-between">
               <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                <button className="bg-black text-white px-4 py-2 rounded-lg  hover:bg-slate-700">
                   Ver Proyecto
                 </button>
               </a>
               <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+                <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-slate-700">
                   Ver Repositorio
                 </button>
               </a>
