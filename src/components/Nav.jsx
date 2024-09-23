@@ -12,9 +12,6 @@ const Nav = () => {
       {/* Logo y Botón "hamburger" */}
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <a href="#home" className="text-black font-bold text-lg">
-          Logo
-        </a>
 
         {/* Botón "hamburger" visible solo en pantallas pequeñas */}
         <button
