@@ -23,7 +23,7 @@ const Nav = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a className="text-black hover:text-gray-300" href="#contacto">
+          <a className="text-black hover:text-gray-300" href="#contact">
             Contacto
           </a>
         </li>

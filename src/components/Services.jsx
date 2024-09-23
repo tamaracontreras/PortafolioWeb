@@ -19,9 +19,8 @@ const Services = () => {
                 Transformación Digital{" "}
               </h5>
               <p className="text-gray-700">
-                Ofrezco mucho más que un simple diseño web. Soluciones
-                personalizadas para destacar su marca y captar la atención de
-                sus visitantes.
+                Soluciones personalizadas para destacar su marca y captar la
+                atención de sus visitantes.
               </p>
             </div>
           </div>
