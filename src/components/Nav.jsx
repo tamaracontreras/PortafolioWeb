@@ -9,14 +9,17 @@ const Nav = () => {
 
   return (
     <nav className="w-full p-4 bg-white fixed top-0 z-10 shadow-md">
-      {/* Botón "hamburger" visible solo en pantallas pequeñas */}
-      <div className="flex justify-between items-center md:hidden">
-        <a href="#home" className="text-black font-bold">
+      {/* Logo y Botón "hamburger" */}
+      <div className="flex justify-between items-center">
+        {/* Logo */}
+        <a href="#home" className="text-black font-bold text-lg">
           Logo
         </a>
+
+        {/* Botón "hamburger" visible solo en pantallas pequeñas */}
         <button
           onClick={toggleMenu}
-          className="text-black focus:outline-none focus:text-gray-700"
+          className="text-black focus:outline-none focus:text-gray-700 md:hidden"
         >
           {/* Icono "hamburger" */}
           <svg
